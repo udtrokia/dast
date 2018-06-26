@@ -1,3 +1,5 @@
+// Stack
+
 #[derive(Debug)]
 struct Stack<T> {
     top: Option<Box<StackNode<T>>>,
