@@ -3,12 +3,6 @@ struct Stack<T> {
     top: Option<Box<StackNode<T>>>,
 }
 
-#[derive(Debug)]
-struct StackNode<T> {
-    val: T,
-    next: Option<Box<StackNode<T>>>,
-}
-
 impl<T> Stack<T> {
     fn new() -> Stack<T> {
         Stack{ top: None }
@@ -32,5 +26,3 @@ impl<T> Stack<T> {
         }
     }
 }
-
-impl<T> Stack
