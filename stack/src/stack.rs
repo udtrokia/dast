@@ -11,6 +11,7 @@ impl<T> Stack<T> {
     }
 
     pub fn push(&mut self, val: T) {
+        // the trait `std::fmt::Debug` is not implemented for `T`
         let mut node = StackNode::new(val);
         let next = self.top.take();
         node.next = next;
@@ -19,6 +20,7 @@ impl<T> Stack<T> {
 
     pub fn pop (&mut self) -> Option<T> {
         let val = self.top.take();
+        println!("{:?}", &val.is_none());
         match val {
             None => None,
             Some(mut x) => {
