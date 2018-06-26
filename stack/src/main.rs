@@ -1,4 +1,6 @@
+extern crate stack;
 
+use stack::stack::Stack;
 
 fn main() {
     #[derive(PartialEq, Eq, Debug)]
@@ -6,8 +8,8 @@ fn main() {
         a: i32,
     }
     let a = TestStruct { a: 5 };
-    let b - TestStruct { a: 9 };
-
+    let b = TestStruct { a: 9 };
+    
     let mut s = Stack::<&TestStruct>::new();
     assert_eq!(s.pop(), None);
 
