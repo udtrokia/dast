@@ -1,5 +1,6 @@
 extern crate tree;
-use tree::node::{Node, BinaryTree, BinarySearchTree};
+use tree::node::{Node, BinarySearchTree};
+// BinarySearchtree is trait. import and taking effect.
 
 type BST<K, V> = Node<K, V>;
 
